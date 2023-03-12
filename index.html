@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MASTERMIND</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>SKOCKO</h1>
+        <div class="buttons">
+          <button class="new-game-btn" id="new-game">NEW GAME</button>
+          <!-------- dodao sam ovaj div da u njemu renderuje ostalu dugmad -------->
+          <div class="appendButtons"></div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="tryGrid"></div>
+        <div class="resultGrid"></div>
+        <div class="symbolGrid">
+          <div id="symbols"></div>
+        </div>
+      </div>
+      <footer>
+        <div class="final-result"></div>
+        <div class="message-div">
+          <p class="message"></p>
+        </div>
+      </footer>
+    </div>
+
+    <audio
+      src="./sounds/background.mp3"
+      id="my_audio"
+      loop="loop"
+      autoplay
+      muted="true"
+    ></audio>
+    <script src="main.js"></script>
+  </body>
+</html>

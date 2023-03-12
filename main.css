@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("img/sky_abstract-1920x1200.jpg") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+img {
+  height: 90%;
+  width: 90%;
+}
+
+.container {
+  padding: 20px;
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper{
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(14, 99, 134, 0.3);
+  padding-right: 10px;
+}
+
+.title {
+  margin: 30px auto 0;
+  padding: 25px 0;
+  background-color: #131c3c;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  border-radius: 10px 10px 0 0;
+}
+
+.tryGrid {
+  background-color: rgba(14, 99, 134, 0.3);
+  padding: 20px 10px 20px 10px;
+}
+
+.resultGrid {
+  padding: 20px 10px 20px 10px;
+}
+
+.symbolGrid {
+  margin-left: auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(1, 50px);
+  cursor: pointer;
+  margin-bottom: 22px;
+  margin-top: 30px;
+}
+.symbolGrid .box {
+  height: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+.row > div {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #ddd;
+}
+.row .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #0171fb;
+}
+.row .rect{
+  position: relative;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2343bf;
+  border: none
+
+}
+.row .circle {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #1f1f1f;
+  width: 80%;
+  height: 80%;
+}
+.row .circle.correct {
+  background-color: red;
+}
+.row .circle.exist {
+  background-color: yellow;
+}
+
+footer{
+  display: flex;
+  background-color: rgb(0 0 0 / 30%);
+}
+
+.final-result{
+  padding: 10px 10px 10px 10px;
+}
+
+.message-div{
+  background: antiquewhite;
+  width: 100%;
+  margin: 15px 15px 24px 13px;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.new-game-btn{
+  padding: 5px;
+  margin-top: 25px;
+  background: none;
+  border: 2px solid white;
+  font: inherit;
+  line-height: 1;
+  color: antiquewhite;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.25s;
+}
+
+.new-game-btn:hover
+{
+  box-shadow: inset 0 0 0 2em #0171fb;
+}
